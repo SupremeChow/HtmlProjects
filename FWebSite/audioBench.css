@@ -1,0 +1,918 @@
+/* 
+Author: Phill***
+CTP 118
+Final Website
+*/
+*
+{
+	box-sizing: border-box;
+	font-family: font-family: Arial, Helvetica, sans-serif;
+}
+a
+{
+	text-decoration: none;
+}
+.container
+{
+	box-shadow: 4px 4px 5px #c7e7e5;
+
+	border-bottom: 3px outset #309c93;
+	border-right: 3px outset #309c93;	
+	border-top: 2px ridge #98e7e1;
+	border-left: 2px ridge #98e7e1;
+
+	
+	/* !!! Gradient Border, hold off on this
+	border: 2px ridge transparent;
+	border-image: radial-gradient(circle at top left, #C4C4C4,#555555);
+	
+	border-image-slice: 1; */
+
+	border-radius: 4px;
+	background-color: rgba(255,255,255, .4); 
+	background:linear-gradient(to bottom right,rgba(255,255, 255, .4), rgba(255, 255, 255, .4)),
+	linear-gradient(to bottom right, 
+	rgba(48, 156, 147, .3), 
+	rgba(48, 156, 147, .2),
+	
+	rgba(152, 231 ,225, .1), 
+	rgba(152, 231 ,225, .1), 
+
+	rgba(152, 231, 225, .1), 
+	rgba(48, 156, 147, .2),
+	rgba(48, 156, 147, .2),
+	rgba(48, 156, 147, .2),
+	rgba(48, 156, 147, .2),
+	rgba(48, 156, 147, .2), 
+	rgba(48, 156, 147, .2),
+	rgba(48, 156, 147, .2),
+	rgba(48, 156, 147, .2),
+	rgba(48, 156, 147, .3)
+	),
+	radial-gradient(at top left,rgba(255,255,255, 1) 2%, rgba(255,255,255,.7) 10%, rgba(255,255,255,.3) 20%, rgba(255,255,255,.1) 60%, rgba(48, 156, 147, .1) 95%);
+	padding: 4px;
+}
+#containerPadNav
+{
+	height:99%;
+	padding-top: 8px;
+	
+}
+
+#containerPadFoot
+{
+	height:99%;
+	padding-top: 1px;
+	padding-left:100px;
+	padding-right:100px;
+	
+	
+	overflow:auto;
+}
+
+#containerPadMain
+{
+	height:99%;
+
+	padding-top: 10px;
+	padding-left:20px;
+	padding-right:20px;
+	
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 24px;
+}
+#mainContent 
+{
+	padding: 20px;
+	overflow:auto;
+	font-size: 16px;
+}
+/*
+#mainContent h4
+{
+	
+	font-family:"Sitka Banner", Georgia, "Times New Roman", serif;font-weight:bold; font-style:italic;
+	font-size: 30px;
+	text-decoration:underline;
+	font-weight:bold;
+	
+	margin:auto;
+	margin-top:30px;
+	text-align: center;
+	
+	width: 700px;
+} */
+#mainContent h5
+{
+	
+	font-family:"Sitka Banner", Georgia, "Times New Roman", serif;font-weight:bold; font-style:italic;
+	font-size: 25px;
+	text-decoration:underline;
+	font-weight:bold;
+	
+	margin:auto;
+}
+/* Main content unordered List: remove Dots TEMPORARILY DISABLE
+#mainContent ul
+{
+	list-style-type:none;
+}
+*/
+/* Main Content List Item: Adds details, removes numbers, and puts borders TEMPORARILY DISABLE!
+#mainContent li
+{
+	display: inline-block;
+	
+	width: 350px;
+	padding: 10px;
+	margin:10px;
+	
+	border: 2px double black;
+	
+	text-align:center;
+	font-weight:bold;
+	text-decoration:underline;
+	
+}
+*/
+
+#mainContent dl
+{
+	border-bottom:6px inset #309c93;
+	margin-bottom: 40px;
+}
+#mainContent dt
+{
+	display: inline;
+	margin:auto;
+	padding-bottom: 10px;
+	
+	font-size:30px;
+	font-weight:bold;
+	
+	color: #309c93; 
+	text-shadow: 3px 1px 1px #98e7e1;
+	/*
+	text-shadow: 2px 2px red;
+	color: yellow;
+	*/
+	
+}
+
+#mainContent dt h3
+{
+	
+	
+	
+	text-decoration:underline;
+	font-family:"Sitka Banner", Georgia, "Times New Roman", serif;font-weight:bold; font-style:italic;
+
+	font-weight:bold;
+}
+#mainContent dd
+{
+	padding: 10px;
+	margin:10px;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight:bold;
+}
+#mainHeader
+{
+	text-align:center;
+	border-bottom: 5px double #309c93;/******** Consider changing Border **********/
+	padding-bottom: 10px;
+	
+}
+
+#mainHeader h1
+{
+	/******************************* Container for encapsulating Main Header
+	border: 5px solid #151515; 
+	border-top: 15px solid #151515;
+	border-left: 10px solid #151515;
+	border-right: 10px solid #151515;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	********************************/
+	margin-top:10px;
+	margin-bottom:10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+	/*color:#a10005;          CHANGE COLOR!!!!! *************/
+	font-weight:bold;
+}
+#footCenter h3, #footLeft h3, #footRight h3
+{
+	font-weight:bold;
+	/* border-bottom: 6px solid black; Maybe change border to dividing image    *********/
+	font-size: 30px;
+}
+
+#footLeft
+{
+	float:left;
+	text-align:center;
+	
+	padding: 20px;
+	
+	margin-top:10px;
+	margin-left: 10px;
+	margin-bottom:10px;
+	vertical-align:top;
+	display:inline-block;
+	
+	font-size:15px;
+	
+}
+#footLeft a
+{
+	font-size: 20px;
+}
+#footCenter
+{
+	
+	width: 300px;
+	float:center;
+	
+	padding: 20px;
+	font-size:15px;
+	margin: 10px;
+	vertical-align:top;
+	display:inline-block;
+	
+	font-family: Arial, Helvetica, sans-serif;
+	
+	font-weight:bold;
+	text-align:center;
+}
+#footRight
+{
+
+	float:right;
+	text-align:center;
+	
+	padding: 20px;
+	margin-top:10px;
+	margin-right:10px;
+	vertical-align:top;
+	display:inline-block;
+	
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-weight:bold;
+	font-size:15px;
+}
+
+
+#floor
+{
+	clear:left;
+
+	overflow:auto;
+	text-align:center;
+	vertical-align:bottom;
+	padding-bottom: 10px;
+	
+}
+
+
+
+
+h1{	 font-family:"Sitka Banner", Georgia, "Times New Roman", serif;font-weight:bold; font-style:italic;}
+h2{	 font-family:"Sitka Banner", Georgia, "Times New Roman", serif;font-weight:bold; font-style:italic;}
+h3{	 font-family:"Sitka Banner", Georgia, "Times New Roman", serif;font-weight:bold; font-style:italic;}
+h4{	 font-family:"Sitka Banner", Georgia, "Times New Roman", serif;font-weight:bold; font-style:italic;}
+h5{	 font-family:"Sitka Banner", Georgia, "Times New Roman", serif;font-weight:bold; font-style:italic;}
+
+
+
+body
+{
+	
+	background-image: linear-gradient(to right,rgba(52, 63, 108, .4), rgba(52, 63, 108, .4)),
+	linear-gradient(to right, 
+	rgba(5, 5, 5, 1), 
+	rgba(5, 5, 5, .8),
+	rgba(25, 25, 25, .5), 	
+	rgba(255, 255 ,255, .8), 
+	rgba(255, 255 ,255, .8), 
+	rgba(255, 255 ,255, .8), 
+	rgba(255, 255 ,255, .9), 
+	
+	rgba(255, 255 ,255, .9), 
+	
+	rgba(255, 255 ,255, .9), 
+	rgba(255, 255 ,255, .8),
+	rgba(255, 255 ,255, .8), 
+	rgba(255, 255 ,255, .8),
+	rgba(25, 25, 25, .5), 
+	rgba(5, 5, 5, .8), 
+	rgba(5, 5, 5, 1)
+	);
+	
+}
+header
+{
+	height: 300px;
+	margin-bottom: 0;
+	width:wrap;
+	
+	/*
+			Replace later with Main Site Banner Image
+	
+	background-image:url(img/Banner3.png);
+	*/
+	
+	margin-left:80px;
+	margin-right:80px;
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+
+}
+#headerBanner
+{
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	background-image:url("img/Banner.png");
+	background-size:cover;
+}
+header h1 /* This Hides Text Title, used for accessability */
+{
+	text-indent:100%;
+	white-space: nowrap;
+	overflow:hidden;
+	
+}
+nav 
+{ 
+	font-weight: bold;
+	text-align:center;	 
+	padding: 1em;
+	float: left;
+	width: 180px;
+	height: wrap; /*870px; original */
+	margin: 20px;
+	 
+	 
+}
+
+nav h3
+{
+	margin: 5px;
+	/* color:#a10005; Nav Heading Color Change Later */
+	font-weight:bold;
+	background-color: transparent;
+	
+	font-weight:bold;
+	font-size: 30px;
+	text-shadow: 3px 3px 2px #c7e7e5;
+	text-decoration:underline;
+	color: #309c93;
+
+	padding: .4em;
+	padding-top:.5em;	
+}
+
+nav a 
+{ 
+	text-decoration: none; 
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	/*border: 2px outset #998888; */
+	border-bottom: 3px outset #309c93;
+	border-right: 3px outset #309c93;	
+	border-top: 2px ridge #98e7e1;
+	border-left: 2px ridge #98e7e1;
+	border-radius: 10px;
+	padding: .1em;
+	margin-bottom: .5em;
+	width: 100%;
+	height: 80px;
+	
+	
+	/* Button Image Change Later 
+	background-color:#151515;
+	background-image: url("img/buttonBack2.png");    
+	background-position: right; **********/
+	background-image: url("img/radialShade.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+
+	
+	
+}
+
+nav a h5
+{
+	
+	
+	/*text-shadow: 2px 1px 1px #309c93; */
+	font-size:20px;
+	width: 90px;
+	margin:5px;
+	padding:.2em;
+	text-align:center;
+		
+}
+nav ul
+{
+	list-style-type: none;
+	margin-left: 0;
+	padding: 10px;
+}
+nav ul p
+{
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+
+	margin-bottom: 20px;
+}
+
+
+a:link{color: #98e7e1; text-shadow: 3px 1px 1px #309c93;}
+a:visited{color: #98e7e1; text-shadow: 2px 1px 1px #309c93;}
+a:hover{color: #DEF0E9; text-shadow: 3px 1px 1px #309c93;}
+
+nav a:link{color: #98e7e1; text-shadow: 3px 1px 1px #309c93;}
+nav a:visited{color: #98e7e1; text-shadow: 2px 1px 1px #309c93;}
+nav a:hover{color: #DEF0E9; border-bottom: 3px inset #98e7e1;
+	border-right: 3px inset #98e7e1;	
+	border-top: 2px inset #309c93;
+	border-left: 2px inset #309c93; 
+
+background-image:url("img/radialShade2.png"), url("img/animatedIcon2.gif"); background-size:cover;}
+
+
+aside
+{
+	
+	font-weight: bold;
+	text-align:center;	 
+	padding: 1em;
+	float: right;
+	width: 180px;
+	height: wrap; /*870px; original */
+	margin: 20px;
+}
+aside ul
+{
+	list-style-type: none;
+	margin-left: 0;
+	padding: 10px;
+}
+aside ul p
+{
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 20px;
+}
+aside h3
+{
+	font-weight:bold;
+	font-size: 30px;
+	text-shadow: 3px 3px 2px #c7e7e5;
+	text-decoration:underline;
+	color: #309c93;
+}
+aside h4
+{
+	text-decoration:underline;
+	font-weight:bold;
+	font-style:italic;
+	font-size: 20px;
+}
+main
+{
+	font-family: Arial, Helvetica, sans-serif;
+	
+	font-size: 14px;
+	margin-left: 220px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	width: auto/*900px;  Original Change back maybe */
+	padding: 10px;
+	min-height: 870px;
+	overflow:auto;
+}
+
+footer
+{
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 100px;
+	margin-right: 100px;
+	overflow:auto;
+
+}
+
+footer h3
+{
+	margin: 5px;
+	margin-bottom:10px;
+	/*
+	color:#a10005;
+	*/
+	font-weight:bold;
+	background-color: transparent;
+	text-shadow: 3px 3px 2px #c7e7e5;
+	text-decoration:underline;
+	color: #309c93;
+	
+	/*
+	border: 5px solid #151515; 
+	border-top: 15px solid #151515;
+	border-left: 10px solid #151515;
+	border-right: 10px solid #151515;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	*/
+	padding: .4em;
+	padding-top:.5em;
+	font-size:25px;
+}
+
+
+
+form fieldset legend
+{
+	font-family:"Sitka Banner", Georgia, "Times New Roman", serif;font-weight:bold; font-style:italic;
+	font-size: 25px;
+}
+
+form fieldset label
+{
+	font-family:"Sitka Banner", Georgia, "Times New Roman", serif;font-weight:bold; font-style:italic;
+	font-weight:bold;
+	font-size: 20px;
+}
+
+caption
+{
+	font-weight:bold;
+	font-size: 40px;
+	
+	color: #309c93; 
+	text-shadow: 3px 1px 1px #98e7e1;
+	/*
+	text-shadow: 2px 2px red;
+	color: yellow;
+	*/
+}
+
+#wrapper 
+{ 
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+
+	min-width: 800px;
+	max-width: 1500px;
+}
+
+#headerText
+{
+	box-shadow: 4px 4px 5px #c7e7e5;
+
+	border-bottom: 3px outset #309c93;
+	border-right: 3px outset #309c93;	
+	border-top: 2px ridge #98e7e1;
+	border-left: 2px ridge #98e7e1;
+	background-image:url("img/headingGradient.png");
+	background-repeat:no-repeat;
+	background-size:100% 50%;
+	background-position:bottom;
+}
+
+#containerPadNavSmall
+{
+	display:none;
+}
+.hCenter
+{
+	font-family:"Sitka Banner", Georgia, "Times New Roman", serif;font-weight:bold; font-style:italic;
+	color: #309c93; 
+	text-shadow: 3px 1px 1px #98e7e1;
+	text-align: center;
+}
+.hCenter 
+{
+	font-family:"Sitka Banner", Georgia, "Times New Roman", serif;font-weight:bold; font-style:italic;
+	color: #309c93; 
+	text-shadow: 3px 1px 1px #98e7e1;
+	text-align: center;
+}
+
+.h2Center
+{
+	font-family:"Sitka Banner", Georgia, "Times New Roman", serif;font-weight:bold; font-style:italic;
+	text-align:center;
+}
+.h3Center
+{
+	font-family:"Sitka Banner", Georgia, "Times New Roman", serif;font-weight:bold; font-style:italic;
+	text-align:center;
+}
+.h2IndexCenter 
+{
+	font-family:"Sitka Banner", Georgia, "Times New Roman", serif;font-weight:bold; font-style:italic;
+	font-size:40px;
+	color: #309c93; 
+	text-shadow: 3px 1px 1px #98e7e1;
+	text-align: center;
+}
+.h4Center
+{
+	font-family:"Sitka Banner", Georgia, "Times New Roman", serif;font-weight:bold; font-style:italic;
+	font-size: 25px;
+	
+	font-weight:bold;
+	font-size: 40px;
+	
+	color: #309c93; 
+	text-shadow: 3px 1px 1px #98e7e1;
+	/*
+	text-shadow: 2px 2px red;
+	color: yellow;
+	*/
+	
+	text-decoration:underline;
+	font-weight:bold;
+	
+	margin:auto;
+	margin-top:30px;
+	text-align: center;
+	
+	width: 700px;
+}
+.imageCenter
+{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	box-shadow: 4px 4px 5px #c7e7e5;
+	
+}
+.mainContentParagraph
+{
+	margin-left:40px;
+	font-weight:bold;
+	font-size: 24px;
+	padding: 40px;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	width: 500px;
+}
+.clearLeft
+{
+	clear: left;
+}
+.clearRight
+{
+	clear: right;
+}
+.indexImageFloat
+{
+	float:right;
+	margin-top:40px;
+	margin-right: 10px;
+	margin-left:10px;
+}
+
+/******                  MEDIA QUERIES
+****************************************/
+
+
+@media only screen and (max-width: 1024px) {
+	body { margin: 0;
+		  padding: 0; }
+	#wrapper { width: auto;
+		       min-width: 0;
+			   margin: 0;
+			   padding: 0; 
+			   box-shadow:none;}
+	header { padding-top: 1px; margin:0; width:auto;  }
+		#headerBanner
+{
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	background-image:url("img/BannerMed2.png");
+	background-size:cover;
+	margin:0;
+}
+	.container 
+	{
+		margin:0;
+		box-shadow:none;
+		width:auto;
+		padding:0;
+	}
+	#mainContent{width:auto; margin:0; padding:0;}
+	#containerPadNavSmall
+	{
+			display:inline-block;
+			height:wrap;
+			width:auto;
+			box-shadow:none;
+	}
+	#containerPadMain
+	{
+		height:wrap;
+			width:auto;
+			box-shadow:none;
+			padding:0;
+			
+	}
+	#containerPadFoot
+	{
+		height:wrap;
+		margin:0;
+		padding:0;
+			width:auto;
+			box-shadow:none;
+	}
+	#footLeft
+	{
+		margin:0;
+		padding:0;
+	}
+	#footCenter
+	{
+		margin:0;
+		padding:0;
+	}
+	#footRight
+	{
+		margin:0;
+		padding:0;
+	}
+	#containerPadNav
+	{
+		display:none;
+	}
+	#footCenter h3, #footLeft h3, #footRight h3 {
+
+    font-size: 25px;
+
+}
+	nav { float: none;
+	      padding-left: 2em;
+	      width: auto; }
+	nav li
+	{
+		margin: auto;
+		display: inline;
+	}	  
+	nav a { padding: 0;
+	      margin: 0;
+		  float: left;
+		  border:none;
+		  width: auto;
+		  display:inline;
+		  background: none;
+		  }
+	
+	/*
+	width:auto;
+		height:auto;
+		display:inline;*/
+	#navContainer
+	{
+		width:auto;
+	}	
+	
+	nav ul
+	{
+		width:auto;
+		margin:0;
+		text-align:center;
+	}
+		  
+	nav a:link{color: #98e7e1; text-shadow: 3px 1px 1px #309c93;}
+	nav a:visited{color: #98e7e1; text-shadow: 2px 1px 1px #309c93;}
+	nav a:hover{color: #DEF0E9; border:none; background-image:none;}
+
+	main  { padding: 2.5em 1em;
+	       margin: 0;
+		   font-size: 90%;
+		   clear: both; }
+	
+	aside
+	{
+		display:none;
+	}
+}
+
+@media only all and (max-width: 768px) {
+	.indexImageFloat
+	{
+		float:none;
+	}
+	#headerBanner
+{
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	background-image:url("img/BannerSmall.png");
+	background-size:cover;
+	margin:0;
+}
+	h1 { font-size: 2em; padding-top: 0.25em; padding-left: 1.5em; width: 85%; }
+	#navContainer
+	{
+		width:auto;
+		height:wrap;
+		padding:0;
+		
+	}	
+	
+	#containerPadNavSmall
+	{
+			display:inline-block;
+			height:auto;
+			width:auto;
+			box-shadow:none;
+			
+	}	
+	nav ul, nav li{padding:0;}
+	nav ul{margin:0;}
+	nav li {display:block; margin:0; padding:0;}
+	nav a { display:inline-block; padding: 0; width:auto; border-bottom:2px solid black; border-radius:0;}
+	nav h3{border-bottom:2px solid black;}
+	#headerText{width: auto; text-align:center; padding: 0; border-bottom:2px solid black;}
+	main { padding-top: 0; }
+	footer
+	{
+		display:inline-block;
+	}
+	/*
+	footer .container 
+	{
+		width:auto;
+		margin:auto;
+		display:inline-block;
+	}
+	*/
+	#containerPadFoot
+	{
+		display:inline-block;
+		float:none;
+		
+	}
+	#floor
+	{
+		margin:auto;
+	}
+	
+	#footLeft
+	{
+		float:none;
+		width:auto;
+	padding: 20px;
+	margin:auto;
+	display:inline-block;
+	font-size:15px;
+	}
+	#footRight
+	{
+		float:none;
+		width:auto;
+	padding: 20px;
+	margin:auto;
+	display:inline-block;
+	font-size:15px;
+	}
+	#footCenter
+	{
+		float:none;
+		width:auto;
+		
+	padding: 20px;
+	margin:auto;
+	display:inline-block;
+	font-size:15px;
+	}
+	#footCenter p
+	{
+		width: 200px;
+	}
+	
+	.floatleft { float: none; display: none; }
+	#hero { display: none; }
+	
+	#mobile { display: inline; }
+	#desktop { display: none; }
+}
+
+
+
+
+
